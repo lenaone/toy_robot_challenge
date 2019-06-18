@@ -27,14 +27,18 @@ class ToyRobot
     end
   end
 
-  def left
+  def turn(facing_direction)
     index = FACING.index(@facing)
-    @facing = FACING.rotate(-1)[index]
+    rotations = facing_direction == 'right' ? 1 : -1
+    @facing = FACING.rotate(rotations)[index]
+  end
+
+  def left
+    turn('left')
   end
 
   def right
-    index = FACING.index(@facing)
-    @facing = FACING.rotate(1)[index]
+    turn('right')
   end
 
   def report

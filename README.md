@@ -95,8 +95,13 @@ movement of the toy robot.
 3. Change to the app directory: `cd toy_robot_challenge`
 3. Install the minitest gem: `gem install minitest`
 
-Running the app: `ruby cli.rb`
-Testing the app: `ruby toy_robot_test.rb`
+### Running the app: 
+
+ `ruby cli.rb`
+
+### Testing the app: 
+    
+`ruby toy_robot_test.rb`
 
 
 ### Approach
