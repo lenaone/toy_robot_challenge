@@ -90,8 +90,8 @@ movement of the toy robot.
 
 ### Set up
 
-1. Make sure you have installed Ruby 2.5.
-2. clone this repository: `git clone https://github.com/lenaone/toy_robot_challenge`
+1. Make sure you have Ruby 2.5 installed in your machine.
+2. Clone this repository: `git clone https://github.com/lenaone/toy_robot_challenge.git`
 3. Change to the app directory: `cd toy_robot_challenge`
 3. Install the minitest gem: `gem install minitest`
 
