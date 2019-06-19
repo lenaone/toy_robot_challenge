@@ -7,11 +7,15 @@ class ToyRobot
   TABLE_SIZE = 4
 
   def place(x,y,facing)
-    if x >= 0 && x <= TABLE_SIZE && y >= 0 && y <= TABLE_SIZE && FACING.include?(facing)
+    if valid?(x,y,facing)
       @x = x
       @y = y
       @facing = facing
     end
+  end
+
+  def valid?(x,y,facing)
+    x >= 0 && x <= TABLE_SIZE && y >= 0 && y <= TABLE_SIZE && FACING.include?(facing)
   end
 
   def move

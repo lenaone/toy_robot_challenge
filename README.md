@@ -106,10 +106,10 @@ movement of the toy robot.
 
 ### Approach
  
-* The toy robot challenge, I approached, To get information from user input. In a class, toy robot move from the information using 4 diffrent methods. Therefore, User need to give an input with command so robot can move it. If input include command then matching with regex expression then get the information and excute in class. Without command, toy robot ignored the input. 
+I started by creating the ToyRobot class with the initial methods like `place`, `move`, `left`, `right` and `report` and including attributes to store its position on the board. The cli.rb file was created to separate the action of playing the game and the ToyRobot itself, reading the user input and calling the right action on the robot instance.
 
-* From methods, if toy robot use methods for left and right, only facing change it. Only move can change x,y as increase or decrease.
+### Approach on testing
 
-* In a test, Test all the possible so, given input and different input is working or not also, I need to check toy robot move over the grid and think about other wrong excute from the user and test.
+I decided to start by writing tests based on the examples given on the problem description, where it lists a sequence of commands and the expected result of a call to `report`. I also created tests in regards to individual methods such as `right`, `left` from the ToyRobot class and also tests about invalid inputs to make sure the robot would respond with `Not placed` or not do anything depending on its current position.
 
 
